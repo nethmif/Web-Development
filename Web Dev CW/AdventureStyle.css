@@ -1,0 +1,195 @@
+/*body. The background image and the font family*/
+body{
+	/* font-family:Georgia; */
+	/* background-color: white; */
+	background-image:url("InformationBackground.jpeg"); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Georgia;
+}
+/*Heading*/
+h1{
+	text-align:center;
+	color:black;
+	font-size:4em;
+	font-family:georgia;
+    padding-top: 5%;
+}
+/*Right side description*/   
+div.yalaDescription{
+    border: 1px solid black;
+    background-color: #DEF4FF;
+    opacity:0.7;
+    width: 40%;
+    margin-left: 80px;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:20px;
+    float: left;
+    line-height: 1.5;
+    padding-bottom:10px;
+    text-align: justify;
+    color: black;
+    font-family: Georgia;
+    padding-top: 30px;
+}
+/*Some interesting things to do title*/
+#activityListTitle{
+    font-family: Georgia;
+    font-size: 30px;
+    color: black;
+    padding-top: 30px;
+    padding-left: 0px;
+    line-height: 2.45;
+}
+/*adjusting the activities table*/
+#activityList{
+    text-align: justify;
+    color: black;
+    font-family: Georgia;
+}
+/*all the activity list (top right box) styles in general*/
+div.activityListAll{
+    border:1px solid black;
+    background-color: #DEF4FF;
+    opacity:0.7;
+    width: 40%;
+    padding-left: 0px;
+    padding-right: 5px;
+    margin-left:20px;
+    margin-right:80px;
+    float: left;
+    padding-bottom:40px;
+}
+/*Wildlife safari, Wildlife Camping and Bird watching styles adjusted*/
+.activitiesListLeft{
+    padding-left:110px;
+    font-size: 20px;
+    line-height: 3;
+}
+/*Fishing, Village Tour and Sightseeing styles adjusted*/
+.activitiesListRight{
+    padding-left:105px;
+    font-size: 20px;
+    line-height: 3;
+}
+/*the grid of three vertical set of images*/
+div ul.ImageColumn {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 0px;
+    padding-top:0px;
+	list-style-type: none;
+    float:left;
+}
+/*the images styles for the three vertical images*/
+div ul.ImageColumn img{
+    width: 110px;
+    height: 98.25px;
+    margin-left:130px;
+}
+/*the three vertical images*/
+div.Images{
+    padding-top: 10px;
+} 
+/*the enlarged image width and height*/
+div.LargeImage img{
+    height: 343px;
+    width: 450px;
+}
+/*the padding, margin and position of the enlarge image*/
+div.LargeImage{
+    float: left;
+    margin-right: 4%;
+	padding-top: 2.4%;
+}
+/*wildlife safari description beside the enlarge image*/
+div.wildlifeSafariDescription{
+  padding-top:47px;
+  margin-right:220px; /*adjusting the distance between the right border and the text*/
+  padding-right:50px;
+  font-size: 1.1em;
+  background-color:white;
+  border:3px solid #4DB8F9;
+  margin-left:730px;
+  margin-top:36px;  /*adjusting the borer top height*/
+  padding-bottom: 61px;   /*adjusting the bottom height of the border to be in parallel to the picture height*/
+}
+/*wildlife camping description beside the enlarge image*/
+div.wildlifeCampingDescription{
+  padding-top:50px;
+  margin-right:220px;
+  padding-right:50px;
+  font-size: 1.1em;
+  background-color:white;
+  border:3px solid #4DB8F9;
+  margin-left:730px;
+  margin-top:35.9px;
+  padding-bottom: 77.5px;
+}
+/*bird watching description beside the enlarge image*/
+div.birdWatchingDescription{
+  padding-top:50px;
+  margin-right:220px;
+  padding-right:50px;
+  font-size: 1.1em;
+  background-color:white;
+  border:3px solid #4DB8F9;
+  margin-left:730px;
+  margin-top:36px;
+  padding-bottom: 18px;
+}
+/*fishing description beside the enlarge image*/
+div.fishingDescription{
+  padding-top:50px;
+  margin-right:220px;
+  padding-right:50px;
+  font-size: 1.1em;
+  background-color:white;
+  border:3px solid #4DB8F9;
+  margin-left:730px;
+  margin-top:36px;
+  padding-bottom: 38px;
+}
+/*village tour description beside the enlarge image*/
+div.villageTourDescription{
+  padding-top:50px;
+  margin-right:220px;
+  padding-right:50px;
+  font-size: 1.1em;
+  background-color:white;
+  border:3px solid #4DB8F9;
+  margin-left:730px;
+  margin-top:36px;
+  padding-bottom: 38px;
+}
+/*sightseeing description beside the enlarge image*/
+div.sightseeingDescription{
+  padding-top:50px;
+  margin-right:220px;
+  padding-right:50px;
+  font-size: 1.1em;
+  background-color:white;
+  border:3px solid #4DB8F9;
+  margin-left:730px;
+  margin-top:36px; 
+  padding-bottom: 77px;
+}
+/*the heading of the description beside the enlarge image*/
+h2{
+    text-shadow: 0 0 6px #10A3FC, 0 0 1px #10A3FC; 
+}
+/*hovering over each image in the three vertical images*/
+#WildlifeSafari1:hover,#WildlifeSafari2:hover,#WildlifeSafari3:hover, #WildlifeCamping1:hover, #WildlifeCamping2:hover, #WildlifeCamping3:hover, #BirdWatching1:hover, #BirdWatching2:hover, #BirdWatching3:hover, #Fishing1:hover, #Fishing2:hover, #Fishing3:hover, #VillageTour1:hover, #VillageTour2:hover, #VillageTour3:hover, #Sightseeing1:hover, #Sightseeing2:hover, #Sightseeing3:hover{
+    opacity:0.8;
+    box-shadow: 0 0 7px 5px rgba(29, 200, 255, 0.7);
+}
+/*when hovering over each activity in the list of activities the text is changed to blue colour*/
+#WildlifeSafari:hover, #WildlifeCamping:hover, #BirdWatching:hover, #Fishing:hover, #VillageTour:hover, #Sightseeing:hover{
+    color:blue; 
+}
+/*when clicking each activity in the list of activities the text is changed to green colour*/
+#WildlifeSafari:active, #WildlifeCamping:active, #BirdWatching:active, #Fishing:active, #VillageTour:active, #Sightseeing:active{
+    color:green; 
+}

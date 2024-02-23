@@ -1,0 +1,175 @@
+ /*Navigation Bar*/
+/*Adding an image for the background and making its position.*/  
+body{        
+    background-image:url("backTeaState.jpg");  
+    width: 100%;    
+    background-size: cover;
+    margin: 0; 
+    background-attachment: fixed; 
+    background-position: 50% 50%;
+    font-family: Georgia;                  
+}
+/*main page content*/
+/*Applying styles to a topic*/
+.topic{         
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 160px;
+    text-align: center;
+    background-color: #227C70;       
+    border-radius: 500px;
+    font-size: 20px; 
+    border: 2px rgb(182, 108, 18) dotted;   
+    color: white;    
+}
+/*https://www.w3schools.com/howto/howto_css_column_cards.asp*/
+/* sets the style for a column layout, including floating the columns to the left, setting a fixed width, and adding padding.*/
+.column {
+  float: left;
+  width: 18%;
+  padding: 0 10px;
+}
+  
+/* Remove extra left and right spaces, due to padding */
+.row {margin:-30px -10px ;}
+
+/* clear any floating elements after the row. */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+} 
+
+/* Style the counter cards */
+.card1,.card2,.card3,.card4,.card5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  height:300px; 
+  border-radius: 10px;   
+}
+/*sets margin*/
+.grp-img{
+  margin-left: 50px;
+  margin-top: 70px;
+}
+/*put a background image to the card*/
+.card1{
+  background-image: url("Sunset.jpg"); 
+  background-position: 70% 50%; 
+}
+/*put a background image to the card*/
+.card2{
+  background-image: url("waterfall.jpg"); 
+  background-position: 40% 60%;  
+}
+/*put a background image to the card*/
+.card5{
+  background-image: url("kingCoconut.jpg"); 
+  background-position: 50% 50%;  
+}
+/*put a background image to the card*/
+.card3{
+  background-image: url("bay.jpg");
+  background-position: 50% 50%;
+}
+/*put a background image to the card*/
+.card4{
+  background-image: url("train_scene.jpg"); 
+}
+/*Style for the text on the card*/
+.column p{
+  color: white;
+  font-size: 30px;
+  padding-top: 160px;
+} 
+/*applies specific styles to a text including width,height,font size, centered text alignment, and a border.*/  
+.maintopic{
+    width: 100%;
+    margin-top: 150px;
+    background-color: #000044;
+    height: 150px; 
+    color: white; 
+    font-size: 50px;
+    text-align: center; 
+    padding-top: 2px; 
+    border:5px lightblue solid;
+}
+/*styles for a text*/
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 60px;   
+    padding-left: 5px;
+    padding-right: 5px;   
+    text-align: justify;    
+}
+/*applies styling to the container class*/
+.container {
+    position: relative;
+    width: 50%;
+    margin-left: 380px;  
+}
+/*displaying the pic1 class as a block*/  
+.pic1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}  
+/*overlay effect*/    
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  background-color: #000044;
+  overflow: hidden;
+  width: 100%;
+  height:0;        
+  transition: .5s ease;  
+}
+/*when we hover the image this will cover the full size */
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  border: 5px lightblue solid;
+  border-radius: 10px;
+  
+}
+/*gives style for a topic*/        
+.grp1-topic{
+  text-align: center;  
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+  0px 0px 20px #b393d3; /*https://blog.logrocket.com/five-cool-css-header-styles-with-cross-browser-compatibility/ */
+}
+/*when we hover the topic its size and colour will be changed*/
+.grp1-topic:hover{
+  font-size: 103%;  
+  text-shadow: 0px 0px 5px yellow, 0px 0px 10px yellow, 0px 0px 10px yellow,
+  0px 0px 20px yellow;
+  color:rgb(84, 176, 218);
+}
+/*removes any underline from the text of the link*/
+.grp1-topic{
+  text-decoration: none;
+}
+/*appear next to each other on the same line*/
+.grp1{
+  display: inline;       
+}
+/*centers the content*/
+.topic-des{
+  text-align: center;
+} 

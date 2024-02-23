@@ -1,0 +1,67 @@
+.topic-des{
+    margin-top: 140px;
+    text-align: center;
+}
+.place-des{
+    display: flex;
+    font-size: 25px;
+    padding: 5px;
+}   
+/*width and height of the element includes the padding and border sizes.*/
+.slideshow-container {box-sizing: border-box;}
+.mySlides {display: none;}/*preventing displaying images as defult.*/
+/*center the image vertically.*/
+.photo {
+    vertical-align: middle;
+    margin-left: 30px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/*styles for the currently active dot.*/
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*creates fading effect*/
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.place-des1{
+  padding-left: 10px;
+  font-size: 25px;
+  background-color: rgb(226, 168, 187);
+}
+.place-des2{
+    padding-left: 10px;
+    font-size: 25px;
+    background-color: rgb(226, 168, 187);
+}
+.place-des3{
+  padding-left: 10px;
+  font-size: 25px;
+  background-color: rgb(226, 168, 187);
+}
+.place-des4{
+  padding-left: 10px;
+  font-size: 25px;
+  background-color: rgb(226, 168, 187);
+}

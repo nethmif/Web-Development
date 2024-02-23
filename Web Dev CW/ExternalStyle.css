@@ -1,0 +1,244 @@
+ /*Navigation Bar*/  
+body{      
+    margin: 0;   
+    font-family: Georgia;                  
+}
+/*Making a fixed navigation bar.*/
+.mainnav{
+  position: fixed;
+  top:0px;
+  z-index:10;
+  width:100%;
+}
+/*Adding styles to the navigation bar*/    
+.nav{       
+    width: 100%;      
+    background:#000044;
+    height:90px;       
+    border-bottom:5px lightblue solid;                     
+}
+/*removing the list style and */                     
+.mainnav ul{       
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    position: absolute;                 
+}
+/*floating to the left and setting margin and padding to the list items.*/
+ul li{
+    float: left;
+    margin-top:20px;       
+    padding-right: 0;
+    padding-left: 0;                 
+}
+/*Applying styles to the main menus and sub menus*/    
+ul li .navItem ,ul li .subItem{
+    width: 120px;
+    color:white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;    
+    margin-left: 110px;        
+    margin-bottom: 20px;    
+    font-weight: bold;
+    position: relative;         
+}
+/*Applying  small margin to the sub menu.*/
+ul li ul li .subItem{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 20px; 
+}
+/*Giving a background colour when we hover the main menu items and sub menu items*/
+ul li .navItem:hover,ul li .subItem:hover{
+    background-color: darkolivegreen;
+}
+/*Applying a background colour for the sub menu*/
+ul li ul{
+    background-color: #000044;    
+}
+/*preventing the sub menu is floated to the left*/
+ul li ul li{
+    float:none; 
+}
+/*sub menu should be hidden initially.*/
+ul li ul {
+    display:none;
+}
+/*making sub menu items are displayed when we hover the top navigation bar items.*/
+ul li:hover ul{
+    display: block;
+}
+/*Giving styles to the logo such as width,height.*/
+.logo img{   
+      float: left;
+      width:130px;
+      height:90px;       
+}
+/*footer*/
+/*Sets the background colour,position,height and border of the top.*/   
+.footer{
+    background-color: #000044;
+    position: relative;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top: 20px;    
+    width: 100%;     
+    border-top:5px lightblue solid;                 
+}
+/*Sets the width and height of the logo */
+.logo-footer{
+    float: left;
+    width:200px;
+    height:140px;
+}/*Making the link red when we hover it*/
+.site:hover{ 
+    color: red;
+}
+/*Making the link red when we hover it*/
+.editor:hover{
+  color: red;
+}
+/*Applying styles to the link of "editor" class*/
+.editor{ 
+    margin-right: 5px;
+	  float: right;
+	  margin-top:50px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border: 3px dotted lightblue;
+    background-color: #000044;
+    color:white;   
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+}
+/*Applying styles to the contact information*/
+.contact{   
+    margin-left:1200px;
+	  float:left;
+	  margin-top:5px;
+    font-size: 20px;
+    height: 50px;    
+    color: white;    
+}
+/*Applying styles to the link of "site" class*/
+.site{ 
+    position:absolute  ;  
+    margin-left:550px;
+    padding: 10px 0px 0px 10px;	
+	  top:100px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    border: 3px dotted lightblue;
+    background-color: #000044;
+    color: white;   
+    text-align: center;
+    text-decoration: none;
+}
+/*Applying styles to the copyright sentence */
+.copyright{
+    color: white;     
+    float: left;
+}
+/*Applying styles to the social icons */
+.social-icons{
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
+    float: left;
+    bottom: 0;
+    position: absolute;
+}
+/*changing the styles of payment methods icons*/
+.footer-img{
+    margin-top: 20px;
+    float: left;
+}
+/*paypal icon styles*/
+.footer-img1{
+    margin-left: 5px;
+    width:100px;
+    height:100px; 
+}
+/*master card icon styles*/
+.footer-img2{
+    margin-left: 10px;
+    width:100px;
+    height:100px; 
+}
+/*visa icon styles*/
+.footer-img3{
+    margin-left: 15px;
+    width:100px;
+    height:100px; 
+}
+/*giving styles to the group of images of sri lankan tourist places*/
+.footer-pic{
+    margin-right: 400px;
+    margin-top: 90px;
+    float:right;      
+}
+/*making width and height of each picture*/
+.footer-pic1{
+    width:150px;
+    height:100px;
+}
+/*making width and height of each picture*/
+.footer-pic2{
+    width:150px;
+    height:100px;
+}
+/*making width and height of each picture*/
+.footer-pic3{
+    width:150px;
+    height:100px;
+}
+/*making width and height of each picture*/
+.footer-pic4{
+    width:150px;
+    height:100px;
+}
+/*making width and height of each social media icon*/
+.linkedin{
+    width:30px;
+    height:30px;
+}
+/*making width and height of each social media icon*/
+.twitter{
+    width:30px;
+    height:30px;
+}
+/*making width and height of each social media icon*/
+.youtube{
+    width:30px;
+    height:30px;
+}
+/*making width and height of each social media icon*/
+.instagram{
+    width:30px;
+    height:30px;
+}
+/*making width and height of each social media icon*/
+.facebook{
+    width:30px;
+    height:30px;
+}
+/*making the phone number and instagram link yellow when it is hovered*/
+.personDetails:hover{
+    color:yellow;
+}
+/*styling phone number and instagram link*/
+.personDetails{
+    text-decoration: none;
+    color:rgb(7, 152, 200);
+}
+
+  
+  

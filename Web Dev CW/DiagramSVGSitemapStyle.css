@@ -1,0 +1,29 @@
+/* body{
+  background-color: white;
+} */
+  /*the main heading*/
+  body{
+    font-family: Georgia;
+  }
+  h1{
+    text-align:center;
+      color:black;
+      font-size:4em;
+      font-family:Georgia;
+    padding-top: 5%;
+  }
+  #sitemap{
+    padding-bottom:0px;
+  }
+  /*changes to be done to the rectangle when hovering over it*/
+  #sitemap g:hover rect, #sitemap g:focus rect{
+      fill: #4169E1;
+      fill-opacity: 0.7;
+      stroke: #000798 ;
+      cursor: pointer;
+  }
+  /*changes to be done to the text inside the rectangle when hovering over it and to change the cursor when entering the rectangle*/
+  #sitemap g:hover g text, #sitemap g:hover text {
+      fill: white;
+      cursor: pointer;
+  }

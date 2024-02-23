@@ -1,0 +1,30 @@
+/*styles heading1*/
+ h1{
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 110px;
+ }
+ /*centers the relevant classes*/
+.intro,.content h2{
+    text-align: center;
+ }
+ /*changing the background colour*/
+ .content{
+    background-color: antiquewhite;
+    height:1200px;
+ }
+ 
+ .profile{
+    margin-left: 580px;
+ }
+/*removes the underline from the link*/ 
+a{
+    text-decoration: none;
+}
+.linkPage{
+   margin-left: 660px;
+}
+/*changes colour when we hover*/
+.linkPage:hover{
+    color:red;
+}

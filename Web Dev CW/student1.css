@@ -1,0 +1,27 @@
+.background{
+	min-height: 110vh;
+	width: 100%;
+	background-image: url(Student1-BG.jpg);
+	background-position: center;
+	background-size:auto;
+	position:relative;
+}
+
+.background img{
+    padding: 5%;
+}
+
+.sidebar{
+	min-height: 93.6%;
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: linear-gradient(rgba(78,0,225,0.75), rgba(7,0,60,0.85));
+	padding: 20px 60px;
+	color: #fff;
+}
+
+.sidebar p{
+	font-size: 20px;
+}

@@ -1,0 +1,76 @@
+/*the main heading*/
+body{
+    font-family: Georgia;
+    /* background-color: #B3E6FF; */
+    background-image: url(editorbg.jpg);
+}
+h1{
+    font-size:4em;
+    text-align: center;
+    font-family: Georgia;
+    padding-top: 5%;
+} 
+/*adjusting the CSS of both the overlay and the photo*/
+.photo {
+    position: relative;
+    width: 15%;
+    float:right;
+    padding-right:450px;
+  }
+/*adjusting the CSS of the photo*/
+.image {
+    display: block;
+    width: 50%;
+    height: auto;
+    float:right;
+}
+/*adjusting the CSS of the shadow appearing when hovering over the image*/
+.overlay {
+    position: absolute;
+    margin-left:115px; /*adjusting the position of the shade*/
+    height: 100%;
+    width: 17%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000044;
+    cursor:pointer;
+}
+/*adjusting the transparency of the shadow appearing whwn hovering over the image*/
+.photo:hover .overlay {
+    opacity: 0.6;
+}
+/*adjusting the text appearing when hovering over the photo*/
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 1.5;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*when hovering over these particular topics the text turns to blue colour*/
+#svg:hover, #thumbnailImages:hover, #pageEditor:hover, #additionalContent:hover{
+    color:green; 
+}
+/*the colour appled between the two horizontal lines*/
+div.detailsColour{
+    background-color: #B3E6FF;
+}
+/*the tasks completed part*/
+div.details{
+    height:100%;
+    font-size: 1em;
+    padding-top:15px;
+    padding-left: 500px;
+    padding-bottom: 10px;
+}
+div.middleContent{
+    text-align: center;
+    padding-right:100px;
+    padding-left:100px;
+}
+#thumbnailImages,#svg,#additionalContent,#pageEditor{
+    color:blue;
+}

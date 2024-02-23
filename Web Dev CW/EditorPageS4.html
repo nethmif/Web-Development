@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="StyleSheet" href="EditorPage.css">
+        <link rel="StyleSheet" href="ExternalStyle.css">
+        <title>Student 4</title>
+    </head>
+        <body>
+            <!-- navigation bar -->
+            <div class="mainnav">
+                <div class="logo"><img src="logo_image.jpg" alt="web logo"></div> <!--logo -->
+                <div class="nav">
+                <ul>
+                    <li><a href="Mainpage.html" class="navItem">Home</a></li>
+                    <li><a href="ProductPage.html" class="navItem">Packages</a></li>
+                    <li><a href="Quiz.html" class="navItem">Quiz</a></li>
+                    <li><a href="ThumbnailImage.html" class="navItem">Gallery</a></li>
+                    <li>
+                    <a href="#" class="navItem">Contact</a>
+                    <ul>
+                        <li><a href="Query.html" class="subItem">Query Form</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#" class="navItem">About</a>
+                    <ul>
+                        <li><a href="DiagramSVGSitemap.html" class="subItem"> Diagram SVG</a></li>
+                        <li><a href="StudentDetails.html" class="subItem">Student details</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <hr>
+            <h1>Page Editor</h1>
+            <div class="detailsColour">
+                <hr>
+                <!--the details of the editor along with the photo-->
+                <div class="photo">
+                    <img src="Nethmi.jpg" alt="Nethmi Fernando" class="image">
+                    <div class="overlay">
+                        <div class="text">20220716 w1953525</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <p><b>Name: Nethmi Fernando</b></p>
+                    <p><b>Role: Student 4</b></p>
+                    <p><b>The following pages were edited by me</b></p>
+                </div>
+                <br>
+                <hr>
+            </div>
+            <!--the tasks related to the web page-->
+            <div class="middleContent">
+                <h2>Thumbnail Images</h2>
+                <p><b>Created predefined font size changing, background colour changing and text colour changing buttons using labels and JavaScript. Moreover, I created a random colour generator button also using JavaScript. Preview images are enlarged and shown to the visitor</b></p>
+                <p id="thumbnailImages">Thumbnail images link</p>
+                <br>
+                <h2>SVG Sitemap</h2>
+                <p><b>Created a sitemap using svg. Added links so that the visitor is directed to the corresponding content related links, this was done using JavaScript</b></p>
+                <p id="svg">Sitemap link</p>
+                <br>
+                <h2>Additional Content Page</h2>
+                <p><b>An additional content page regarding Yala national park was created. Thumbnail image concepts were adapted in this section.</b></p>
+                <p id="additionalContent">Additonal Content page link</p>
+                <br>
+                <h2>Editors page</h2>
+                <p><b>Information related to the editor, the tasks completed and a breif description related to each task was mentioned along with the appropriate links</b></p>
+                <p id="pageEditor">Page Editor link</p>
+                <br>
+            </div>
+        <!-- Footer  -->
+        <div class="footer">
+            <img src="logo_image.jpg" alt="web logo" class="logo-footer"> <!--logo-->
+            <a href="DiagramSVGSitemap.html" class="site"><!--link-->
+            Site Map
+            </a>
+            <a href="EditorPageS4.html" class="editor"><!--link-->
+            Page Editor
+            </a>
+            <div class="contact">
+            <h2>Contact Us</h2> <!--contact details-->
+            Address
+            145 Watson street,<br> Colombo, <br>Sri Lanka.<br>
+            Phone :
+            <a href="#" class="personDetails">(94) 76-1234-567</a> <br>
+            Email : sereneislands@gamil.com<br>
+            Instagram :
+            <a href="#SereneIslands" class="personDetails">SereneIslands</a>
+            </div>
+            <div class="footer-pic">
+            <img src="Nilaveli-Beach.jpg" class="footer-pic1" alt="Nilaveli Beach">
+            <img src="lipton_seat.jpg" class="footer-pic2" alt="lipton's seat">
+            <img src="Yala-National-park.jpg" class="footer-pic3" alt="Yala National park">
+            <img src="sri-lanka-travel.jpg" class="footer-pic4" alt="Dambulla Rock">
+            </div>
+            <div class="footer-img"><!--payment methods icons -->
+                <img src="paypal.png" class="footer-img1" alt="Paypal logo">
+                <img src="MasterCard.png" class="footer-img2" alt="Master Card logo">
+                <img src="visa.png" class="footer-img3" alt="Visa logo">
+            </div>
+            <p class="copyright">Copyright &copy; All Rights Reserved.</p>
+            <div class="social-icons"> <!--social media icons-->
+                <a href="#"><img src="linkedin.png" alt="linkedin logo" class="linkedin"></a>
+                <a href="#"><img src="youtube-play.png" alt="youtube logo" class="youtube"></a>
+                <a href="#"><img src="facebook-new.png" alt="facebook logo" class="facebook"></a>
+                <a href="#"><img src="instagram-new.png" alt="instagram logo" class="instagram"></a>
+                <a href="#"><img src="twitter.png" alt="twitter logo" class="twitter"></a>
+            </div>
+        </div>
+            <script>
+                /*SVG*/
+                document.getElementById("svg").addEventListener("click", svg);
+                function svg(){
+                    document.location.href="DiagramSVGSitemap.html";}
+                /*Thumbnail Images*/
+                document.getElementById("thumbnailImages").addEventListener("click", thumbnailImages);
+                function thumbnailImages(){
+                    document.location.href="ThumbnailImage.html";}
+                /*Page editor*/
+                document.getElementById("pageEditor").addEventListener("click" , pageEditor);
+                function pageEditor(){
+                    document.location.href="EditorPageS4.html";}
+                /*Additional Information*/
+                document.getElementById("additionalContent").addEventListener("click", additionalContent)
+                function additionalContent(){
+                    document.location.href="Adventure.html";}
+            </script>
+        </body>
+</html>
+
+

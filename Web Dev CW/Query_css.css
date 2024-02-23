@@ -1,0 +1,52 @@
+/*styles the form*/
+.query-container{
+    padding-top:30px;
+    padding-left: 20px ;    
+    background-image: url("backgroundTile.jpg");    
+    margin-left:400px;
+    margin-right:410px;
+    margin-top:110px;
+    border-radius:20px;
+    height:1100px;
+    border-style:solid;
+    border-color:lightblue;  
+    font-size: 20px;     
+}
+/*changes height,width and font-size*/
+input[type=text],select,textarea{
+    height: 40px;
+    width: 600px;
+    font-size:18px ;    
+}
+input[type=submit] {
+    background-color:black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+    text-align: center;
+    font-size:18px ;
+    width: 100px;    
+}
+/*giving styles to the error message*/
+.error {
+	color: white;
+    background-color: red;
+}
+/*giving styles to the thank you message*/
+#thankYouMessage {
+	display: none;
+    text-align: center;
+    background-image:url("backgroundTile.jpg");	
+}
+#thankYouMessage .message1{
+    font-size: 25px;
+    color: green;
+}
+#thankYouMessage .message2{
+    font-size: 18px;
+    color: black;
+}
+
+

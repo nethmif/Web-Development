@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Query Form</title>
+	<link rel="stylesheet" href="Query_css.css"><!-- linking style sheets -->
+	<link rel="stylesheet" href="ExternalStyle.css">  		
+</head>
+<body>
+	<!-- navigation bar -->
+	<div class="mainnav" >
+		<div class="logo"><img src="logo_image.jpeg" alt="web logo" ></div> <!--logo -->
+		<div class="nav">            
+		<ul>
+			<li><a href="Mainpage.html" class="navItem">Home</a></li><!--main menu items-->
+			<li><a href="ProductPage.html"  class="navItem">Packages</a></li>
+			<li><a href="Quiz.html"  class="navItem">Quiz</a></li>
+			<li><a href="ThumbnailImage.html"  class="navItem">Gallery</a></li>
+			<li>
+				<a href="#"  class="navItem">Contact</a>
+				<ul>
+				   <li><a href="Query.html"  class="subItem">Query Form</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"  class="navItem">About</a>
+				<ul>
+					<li><a href="DiagramSVGSitemap.html" class="subItem"> Diagram SVG</a></li><!--sub menu items-->
+					<li><a href="StudentDetails.html" class="subItem">Student details</a></li>                
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>            
+		<div class="query-container"><!--form-->
+			<form class="form" id="Form" method="post" action="mailto:karunarathnabinuri@gmail.com" >
+	        <label for="fullName">Full Name:</label><br><br><!--name input field-->
+			<input type="text" name="full name" id="fullName" autocomplete="off">			
+			<br><span id="invalidName" class="error"></span><br><br>
+			<label for="number">Phone Number:</label><br><br><!--phone number input field-->
+			<input type="text"  name="phone number" id="number" autocomplete="off">
+			<br><span id="invalidNumber" class="error"></span><br><br>
+			<label for="email">Email Address:</label><br><br><!--email address input field-->
+			<input type="text" name="Email" id="email" autocomplete="off">
+			<br><span id="invalidEmail" class="error"></span><br>
+			<br ><!--radio buttons-->			
+			<p>How satisfied were you with our website today ? Choose from 0 to 5. Where 0 is extremely dissatisfied and 5 is extremely satisfied.</p>			
+			<input type="radio" id="num1" name="rating" >
+			<label for="num1">1</label>
+			<input type="radio" id="num2" name="rating" >
+			<label for="num2">2</label>
+			<input type="radio" id="num3" name="rating" >
+			<label for="num3">3</label>
+			<input type="radio" id="num4" name="rating" >
+			<label for="num4">4</label>
+			<input type="radio" id="num5" name="rating" >
+			<label for="num5">5</label>
+			<br><span id="invalidRadio" class="error"></span><br><br>			
+			<label for="details" >Please could you tell us your reasons for giving this rating:</label><br><br>
+			<textarea id="details" name="Details"></textarea><br><span id="invalidDetails" class="error"></span><br><br>			
+			<label for="method1">How did you want to complete this task today? (optional) :</label><br><br>
+			<select name="Method1" id="method1">
+				<option value=select>--Please Select--</option>
+				<option value=phone>Phone</option>
+				<option value=website>Website</option>
+				<option value=webchat>Webchat</option>
+				<option value=socialMedia>Social Media</option>
+				<option value=email>Email</option>
+			</select>
+			<br><br><br>
+			<label for="method2">If you had to complete this task again, how would you prefer to do it? (optional):</label><br><br>
+			<select name="Method2" id="method2">
+				<option value=select>--Please Select--</option>
+				<option value=phone>Phone</option>
+				<option value=website>Website</option>
+				<option value=webchat>Webchat</option>
+				<option value=socialMedia>Social Media</option>
+				<option value=email>Email</option>
+			</select>
+			<br><br><br>
+			<input type="submit" value="Send" ><br><br><br>
+								
+			</form>
+		</div>
+			<div id="thankYouMessage">
+				<p class="message1">Thank you !</p>
+				<p class="message2">Thank you for taking the time to give us your feedback on your experience today.</p></div>
+			<script src="Query.js"></script>		
+		<div class="footer"> <!--footer-->
+            <img src="logo_image.jpeg" alt="web logo"  class="logo-footer"> <!--logo-->              
+                <a  href="DiagramSVGSitemap.html" class="site"><!--link-->
+                    Site Map 
+                </a>                    
+                <a href="EditorpageS2.html" class="editor"><!--link-->
+                    Page Editor
+                </a>                        
+            <div class="contact"><!--contact details-->
+                <h2>Contact Us</h2>
+                    Address
+                    145 Watson street,<br> Colombo, <br>Sri Lanka.<br>                    
+                    Phone :
+                    <a  href="#" class="personDetails">(94) 76-1234-567</a> <br>                   
+                    Email : sereneislands@gamil.com<br>                            
+                    Instagram :
+                    <a href="#SereneIslands" class="personDetails">SereneIslands</a>
+            </div>
+            <div class="footer-pic">
+                <img src="Nilaveli-Beach.jpg"  class="footer-pic1" alt="Nilaveli Beach">
+                <img src="lipton_seat.jpg"  class="footer-pic2" alt="lipton's seat">
+                <img src="Yala-National-park.jpg"  class="footer-pic3" alt="Yala National park">
+                <img src="sri-lanka-travel.png"  class="footer-pic4" alt="Dambulla Rock">
+            </div>
+            <div class="footer-img"><!--payment methods icons-->
+                <img src="paypal.png" class="footer-img1" alt="Paypal logo">
+                <img src="MasterCard.png"  class="footer-img2" alt="Master Card logo">
+                <img src="visa.png"  class="footer-img3" alt="Visa logo">                
+            </div>                         
+                <p class="copyright">Copyright &copy; All Rights Reserved.</p>                     
+                <div class="social-icons"> <!--social media icons-->                
+                    <a  href="#" ><img src="linkedin.png"  alt="linkedin logo" class="linkedin" ></a>
+                    <a  href="#" ><img src="youtube-play.png"   alt="youtube logo" class="youtube"></a>
+                    <a  href="#" ><img src="facebook-new.png"   alt="facebook logo" class="facebook" ></a>
+                    <a  href="#"><img src="instagram-new.png"   alt="instagram logo"  class="instagram"></a> 
+                    <a  href="#" ><img src="twitter.png"   alt="twitter logo" class="twitter"></a>                    
+                </div>                    
+        </div>           
+</body>
+</html>

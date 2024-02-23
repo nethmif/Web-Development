@@ -1,0 +1,32 @@
+#heading{
+    font-size: 4em;
+    text-align: center;
+    color: #FFFFFF;
+}
+#table{
+    font-size: 1em;
+    color:#FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: left;
+}
+td{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url("Tracks.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:10px;
+    text-align:center;
+    font-family:Franklin Gothic Medium;
+    color: #FFFFFF;;
+}

@@ -1,0 +1,88 @@
+/*adjusting the font family and the background colour of the web page*/
+/* body{
+	font-family:Georgia;
+	background-color: white;
+} */
+/*adjusting the main heading*/
+body{
+	font-family: Georgia;
+}
+h1{
+	text-align:center;
+	color:black;
+	font-size:4em;
+	font-family:Georgia;
+    padding-top: 5%;
+}
+/*adjusting the label of the background colour change*/
+div.BackgroundColour{
+	color:black;
+	float:right;
+	padding:50px;
+	padding-top:0px;
+	margin-right:100px;
+}
+/*adjusting the label of the text colour change*/
+div.TextColour{
+	color:black;
+	float:right;
+	padding:50px;
+	padding-top:0px;
+}
+/*adjusting the label of the font size change*/
+div.FontSize{
+	color:black;
+	float:right;
+	padding:50px;
+	padding-top:0px;
+}
+div.randomColour{
+	float:right;
+	padding:100px;
+	padding-top:0px;
+}
+/*adjusting the grid in the horizontal five images*/
+div ul.ImageRow {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 15px;
+	margin-left:5px;
+	margin-top:5px;
+	border-radius: 20%;
+	list-style-type: none;
+}
+/*adjusting the image height, width and positioning*/
+div ul.ImageRow img{
+	width: 250px;
+	height: 200px;
+	padding-top: 5%;
+}
+/*adjustments to all the five images in general*/
+div.AllImages{
+    padding-top: 10px;
+}
+/*adjustments to the enlarged image*/
+div.EnlargeImage img{
+    height: 350px;
+    width: 450px;
+}
+/*adjustments to the positioning of the enlarged image*/
+div.EnlargeImage{
+    margin-left: 45px;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 10%; 
+	padding-top: 2%;
+}
+/*adjustemnts done to the image description*/
+div.ImageDescription{
+	color:black;
+	padding-right: 10%;
+	padding-top: 1%;
+    line-height: 2;
+    margin-bottom: 20%; 
+}
+/*when hovering over  each imge in the five images it will get bigger*/
+#Sigiriya:hover,#Nilaveli:hover,#LiptonTeaSeat:hover,#YalaNationalPark:hover,#Camping:hover{
+    transform:scale(1.1);
+}

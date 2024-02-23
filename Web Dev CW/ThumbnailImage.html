@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link rel="StyleSheet" href="ThumbnailImageStyle.css">
+        <link rel="StyleSheet" href="ExternalStyle.css">
+    </head>
+	<body>
+        <!-- navigation bar -->
+        <div class="mainnav">
+            <div class="logo"><img src="logo_image.jpg" alt="web logo"></div> <!--logo -->
+            <div class="nav">
+            <ul>
+                <li><a href="MainPage.html" class="navItem">Home</a></li>
+                <li><a href="ProductPage.html" class="navItem">Packages</a></li>
+                <li><a href="Quiz.html" class="navItem">Quiz</a></li>
+                <li><a href="ThumbnailImage.html" class="navItem">Gallery</a></li>
+                <li>
+                <a href="#" class="navItem">Contact</a>
+                <ul>
+                    <li><a href="Query.html" class="subItem">Query Form</a></li>
+                </ul>
+                </li>
+                <li>
+                <a href="#" class="navItem">About</a>
+                <ul>
+                    <li><a href="DiagramSVGSitemap.html" class="subItem"> Diagram SVG</a></li>
+                    <li><a href="StudentDetails.html" class="subItem">Student details</a></li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+	<h1 id="GalleryText">Gallery</h1>
+	<div class="BackgroundColour">
+		<label for="BackgroundColourChange" id="BackgroundColourChangeLabel">Background color :</label>
+        <select name="BackgroundColourChange" id="BackgroundColourChange" onchange="BackgroundColourChange(this.value)">
+			<option value="#FFFFFF">White</option>
+            <option value="#000044">Blue</option>
+			<option value="#008000">Green</option>
+			<option value="#FFFF00">Yellow</option>
+        </select>
+	</div>
+	<div class="TextColour">
+        <label for="TextColourChange" id="TextColourChangeLabel">Text Color:</label>
+        <select name="TextColourChange" id="TextColourChange" onchange="TextColourChange(this.value)">
+			<option value="#000000">Black</option>
+            <option value="#FFFFFF">White</option>
+            <option value="#008000">Green</option>
+            <option value="#FFA500">Orange</option>
+            <option value="#852F92">Purple</option>
+        </select>
+	</div>
+	<div class="FontSize">
+        <label for="FontSize" id="FontSizeLabel">Font Size:</label>
+        <select name="FontSize" id="FontSize" onchange="FontSize(this.value)">
+            <option value="medium">Medium</option>
+			<option value="x-small">Small </option>
+            <option value="x-large">Large</option>
+        </select>
+	</div>
+    <div class="randomColour" id="randomColour">
+        <button onclick="changeColour()">Random Colour</button>
+    </div>
+	<br><br>
+	<div class="AllImages">
+       <ul class="ImageRow">
+            <li><img src="Sigiriya.jpeg" alt="Sigiriya" id="Sigiriya"></li>
+            <li><img src="Nilaveli.jpeg" alt="Nilaveli" id="Nilaveli"></li>
+            <li><img src="LiptonTeaSeat.jpeg" alt="Lipton Tea Seat" id="LiptonTeaSeat"></li>
+            <li><img src="YalaNationalPark.jpg" alt="Yala National Park" id="YalaNationalPark"></li>
+            <li><img src="Camping.jpeg" alt="Yala Camping" id="Camping"></li>        
+        </ul>
+    </div>
+	<div class="EnlargeImage">
+        <img src="Sigiriya.jpeg" alt="Sigiriya">
+    </div>
+
+	<div class="ImageDescription">
+        <h2 id="ImageName">Sigiriya</h2>
+        <p id="Description">Sigiriya, also identified as the Lion’s rock, is a rock fortress and a castle found in the Matale district of Sri Lanka. Some of the most attractive parts of Sigiriya are its gardens, Lion’s Paws, frescos, mirror walls, and many more. The complex hydraulics system at the fortress enhances the site’s reputation as a beautiful example of classical city planning.</p>
+    </div> 
+	    <!-- Footer  -->
+        <div class="footer">
+            <img src="logo_image.jpg" alt="web logo" class="logo-footer"> <!--logo-->
+            <a href="DiagramSVGSitemap.html" class="site"><!--link-->
+            Site Map
+            </a>
+            <a href="EditorPageS4.html" class="editor"><!--link-->
+            Page Editor
+            </a>
+            <div class="contact">
+            <h2>Contact Us</h2> <!--contact details-->
+            Address
+            145 Watson street,<br> Colombo, <br>Sri Lanka.<br>
+            Phone :
+            <a href="#" class="personDetails">(94) 76-1234-567</a> <br>
+            Email : sereneislands@gamil.com<br>
+            Instagram :
+            <a href="#SereneIslands" class="personDetails">SereneIslands</a>
+            </div>
+            <div class="footer-pic">
+            <img src="Nilaveli-Beach.jpg" class="footer-pic1" alt="Nilaveli Beach">
+            <img src="lipton_seat.jpg" class="footer-pic2" alt="lipton's seat">
+            <img src="Yala-National-park.jpg" class="footer-pic3" alt="Yala National park">
+            <img src="sri-lanka-travel.jpg" class="footer-pic4" alt="Dambulla Rock">
+            </div>
+            <div class="footer-img"><!--payment methods icons -->
+                <img src="paypal.png" class="footer-img1" alt="Paypal logo">
+                <img src="MasterCard.png" class="footer-img2" alt="Master Card logo">
+                <img src="visa.png" class="footer-img3" alt="Visa logo">
+              </div>
+              <p class="copyright">Copyright &copy; All Rights Reserved.</p>
+              <div class="social-icons"> <!--social media icons-->
+                <a href="#"><img src="linkedin.png" alt="linkedin logo" class="linkedin"></a>
+                <a href="#"><img src="youtube-play.png" alt="youtube logo" class="youtube"></a>
+                <a href="#"><img src="facebook-new.png" alt="facebook logo" class="facebook"></a>
+                <a href="#"><img src="instagram-new.png" alt="instagram logo" class="instagram"></a>
+                <a href="#"><img src="twitter.png" alt="twitter logo" class="twitter"></a>
+            </div>
+        </div>
+	<script>
+		function BackgroundColourChange(value){
+            document.body.style.backgroundColor = value;
+        }
+		function TextColourChange(value) {
+			document.getElementById("GalleryText").style.color = value;
+            document.getElementById("BackgroundColourChangeLabel").style.color = value;
+            document.getElementById("TextColourChangeLabel").style.color = value;
+			document.getElementById("FontSizeLabel").style.color = value;
+			document.getElementById("ImageName").style.color = value;
+			document.getElementById("Description").style.color = value;
+        }
+		function FontSize(value) {
+			document.getElementById("GalleryText").style.fontSize = value;
+			document.getElementById("BackgroundColourChangeLabel").style.fontSize = value;
+			document.getElementById("TextColourChangeLabel").style.fontSize = value;
+			document.getElementById("FontSizeLabel").style.fontSize = value;
+			document.getElementById("ImageName").style.fontSize = value;
+			document.getElementById("Description").style.fontSize = value;
+		}
+        /*Random colour generator*/
+        function changeColour() {
+		const red = Math.floor(Math.random() * 256);
+		const green = Math.floor(Math.random() * 256);
+		const blue = Math.floor(Math.random() * 256);
+  	  	document.body.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+		}
+        /*Sigiriya image and description change*/
+		document.getElementById("Sigiriya").addEventListener("mouseover", Sigiriya);
+		function Sigiriya(){
+            document.images[6].src="Sigiriya.jpeg";
+            document.getElementById("ImageName").innerHTML = "Sigiriya";
+            document.getElementById("Description").innerHTML = "Sigiriya, also identified as the Lion’s rock, is a rock fortress and a castle found in the Matale district of Sri Lanka. Some of the most attractive parts of Sigiriya are its gardens, Lion’s Paws, frescos, mirror walls, and many more. The complex hydraulics system at the fortress enhances the site’s reputation as a beautiful example of classical city planning.";}
+        /*Nilaveli image and description change*/
+        document.getElementById("Nilaveli").addEventListener("mouseover", Nilaveli);
+		function Nilaveli(){
+            document.images[6].src="Nilaveli.jpeg";
+            document.getElementById("ImageName").innerHTML = "Nilaveli";
+            document.getElementById("Description").innerHTML = "Nilaveli Beach is located only a few kilometers away from the city of Trincomalee. There are many interesting things to do in the Nilaveli beach they are, scuba diving, boat tours, sunbathing in the beach and sihtseeing. This spectacular beach in Trincomalee City boasts of sandy shores and clear waters";}
+        /*Lipton seat image and description change*/
+        document.getElementById("LiptonTeaSeat").addEventListener("mouseover", LiptonTeaSeat);
+		function LiptonTeaSeat(){
+            document.images[6].src="LiptonTeaSeat.jpeg";
+            document.getElementById("ImageName").innerHTML = "Lipton Seat";
+            document.getElementById("Description").innerHTML = "Lipton Seat in Sri Lanka’s highlands is arguably the most iconic destination when it comes to the country's rich tea plantation history. Lipton’s Seat is a high observation point in the hills of Poonagala. It is also near the Dambatenne Tea Factory. Lipton’s Seat is so named because the famed Scottish baron and tea planter Sir Thomas Lipton used it as the seat to survey his empire in a time long gone but not forgotten.";}
+		/*Yala image and description change*/
+        document.getElementById("YalaNationalPark").addEventListener("mouseover", YalaNationalPark)
+		function YalaNationalPark(){
+            document.images[6].src="YalaNationalPark.jpg";
+            document.getElementById("ImageName").innerHTML = "Yala National Park";
+            document.getElementById("Description").innerHTML = "Yala National Park is located in the south eastern region of Sri Lanka. Yala National Park is the most popular wildlife destination in Sri Lanka because of the high chance of encounter and variety of animals. Its diversity of bird, mammal and reptile life is unrivalled in the country and there are particularly high densities of its two keystone species: elephants and leopards.";
+        }
+        /*Camping image and description change*/
+        document.getElementById("Camping").addEventListener("mouseover", Camping);
+        function Camping(){
+            document.images[5].src="Camping.jpeg";
+            document.getElementById("ImageName").innerHTML = "Yala Safari Camping";
+            document.getElementById("Description").innerHTML = "If you are looking for an authentic wildlife experience that involves sleeping under canvas in complete luxury amidst scenic jungle settings, dining under the stars to the sounds of a crackling campfire, enjoying fresh local food while sipping chilled beer, engaging in interesting bush walks, meeting with the locals and most significantly experiencing the best of Sri Lankan wildlife";
+        }
+	</script>
+	</body>
+</html>

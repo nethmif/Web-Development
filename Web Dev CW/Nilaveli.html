@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nilaveli</title>
+    <link rel="stylesheet" href="ExternalStyle.css"> <!-- linking style sheets -->
+	<link rel="stylesheet" href="Nilaveli.css">       
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="mainnav" >
+        <div class="logo"><img src="logo_image.jpeg" alt="web logo" ></div><!--logo-->
+        <div class="nav">            
+        <ul>
+            <li><a href="Mainpage.html" class="navItem">Home</a></li><!--main menu items-->
+            <li><a href="ProductPage.html"  class="navItem">Packages</a></li>
+            <li><a href="Quiz.html"  class="navItem">Quiz</a></li>
+            <li><a href="ThumbnailImage.html"  class="navItem">Gallery</a></li>
+            <li>
+                <a href="#"  class="navItem">Contact</a>
+                <ul>
+                   <li><a href="Query.html"  class="subItem">Query Form</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"  class="navItem">About</a>
+                <ul>
+                    <li><a href="DiagramSVGSitemap.html" class="subItem"> Diagram SVG</a></li><!--sub menu items-->
+                    <li><a href="StudentDetails.html" class="subItem">Student details</a></li>                
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </div>  
+    <h1 class="topic-des">Nilaveli Beach</h1>     
+    <div class="slideshow-container">
+        <div class="mySlides fade">  
+          <img class="photo" src="Nilaveli-Beach.jpg" style="width:100%;height:500px" alt="Nilaveli Beach">  
+        </div>
+        <div class="mySlides fade">  
+          <img class="photo" src="Nilaveli-Beach2.jpg" style="width:100%;height:500px" alt="Nilaveli Beach">  
+        </div>
+        <div class="mySlides fade">  
+          <img class="photo" src="Nilaveli-Beach3.webp" style="width:100%;height:500px" alt="Nilaveli Beach">  
+        </div>
+    </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div> 
+        <script>
+            let presentationIndex = 0;
+            showSlides();            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              presentationIndex++;
+              if (presentationIndex > slides.length) {presentationIndex= 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[presentationIndex-1].style.display = "block";  
+              dots[presentationIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image after every 2 seconds
+            }
+        </script>              
+            <div class="place-des">
+            <p class="nilaveli-des">Nilaveli Beach is located on the <em>northeastern coast</em> of Sri Lanka, in the <strong>Trincomalee District</strong>.
+                It is a long, wide stretch of white sand that meets crystal clear waters of the Indian Ocean.
+                The beach is known for its calm, shallow waters, making it a popular destination for swimming, snorkeling, and scuba diving.
+                Visitors can spot a variety of marine life, including colorful fish, sea turtles, and even sharks.<br><br>
+                The surrounding area is also home to a number of dive sites, including the <em>Pigeon Island National Park.</em>
+                Nilaveli Beach is also a great spot for water sports such as <strong>windsurfing, jet skiing, and banana boating.</strong>
+                The beach is less crowded than other popular Sri Lankan beaches, making it an ideal place to relax and unwind.
+                Nearby accommodations range from luxury resorts to simple beachside bungalows.
+                Visitors can also take day trips to explore the historic city of Trincomalee, which is known for its ancient Hindu temples and colonial-era fort.
+                The best time to visit Nilaveli Beach is from<em> May to September</em>, when the weather is sunny and dry with calm seas.</p><br>
+            </div>                 
+    <div class="place-des1">               
+        <h4>On Pigeon Island, you may go shark and turtle swimming</h4>
+        <p>There is a 10-minute boat ride from Nilaveli Beach. This tiny island just
+         offshore of Nilaveli Beach is actually a <em>national park</em> in Sri Lanka.
+         The island is well-known for the diversity of its marine life, which includes many turtles and
+          Blacktip reef sharks. This puts it among the top things to do in Nilaveli Beach, along with the 
+          presence of a stunning coral reef.</p>          
+        <img src="pigeon_island.webp" alt="Pigeon Island" style="height:230px">
+    </div>
+    <div class="place-des2">
+        <h4>Investigate Fort Frederick</h4>
+        <p>around <strong>20 minutes from Nilaveli</strong>.The old fort was built to protect one of Sri Lanka's most important strategic ports, 
+            and while not much of it remains today, it's still a fascinating place to visit.There are two temples worth visiting inside the fort. 
+            The <em>Gokanna Raja Monastery</em> and the <em>Koneshwaram Temple</em> are the two.</p>
+        <img src="Fort-Frederick-Trincomalee.jpg" alt="Fort Fredrick" style="height:230px">
+    </div>
+    <div class="place-des3">
+        <h4>Accommodation</h4>
+        <p>Nilaveli offers a variety of lodging choices, from affordable guesthouses to opulent resorts.
+        Many of the hotels and resorts are directly on the beach, providing breathtaking views of the water and quick access to other activities like water sports.</p>
+    </div>
+    <div class="place-des4">
+        <h4>Getting There</h4>
+        <p>The <em>Bandaranaike International Airport</em> in Colombo, which is about <strong>265 kilometers</strong> away, is the closest airport to Nilaveli. 
+            Visitors can then hire a tuk-tuk or taxi to travel to Nilaveli from Trincomalee by taking a taxi or the bus from there. As an alternative,
+             a number of train services connect Colombo with Trincomalee, and the trip takes 6 to 8 hours.</p>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <img src="logo_image.jpeg" alt="web logo"  class="logo-footer">  <!--logo-->             
+            <a  href="DiagramSVGSitemap.html" class="site"><!--link-->
+                Site Map 
+            </a>                    
+            <a href="EditorpageS2.html" class="editor"><!--link-->
+                Page Editor
+            </a>                        
+        <div class="contact">
+            <h2>Contact Us</h2><!--contact details-->
+                Address
+                145 Watson street,<br> Colombo, <br>Sri Lanka.<br>                    
+                Phone :
+                <a  href="#" class="personDetails">(94) 76-1234-567</a> <br>                   
+                Email : sereneislands@gamil.com<br>                            
+                Instagram :
+                <a href="#SereneIslands" class="personDetails">SereneIslands</a>
+        </div>
+        <div class="footer-pic">
+            <img src="Nilaveli-Beach.jpg"  class="footer-pic1" alt="Nilaveli Beach">
+            <img src="lipton_seat.jpg"  class="footer-pic2" alt="lipton's seat">
+            <img src="Yala-National-park.jpg"  class="footer-pic3" alt="Yala National park">
+            <img src="sri-lanka-travel.png"  class="footer-pic4" alt="Dambulla Rock">
+        </div>
+        <div class="footer-img"><!--payment methods icons-->
+            <img src="paypal.png" class="footer-img1" alt="Paypal logo">
+            <img src="MasterCard.png"  class="footer-img2" alt="Master Card logo">
+            <img src="visa.png"  class="footer-img3" alt="Visa logo">                
+        </div>                         
+            <p class="copyright">Copyright &copy; All Rights Reserved.</p>                     
+            <div class="social-icons"><!--social media icons-->                 
+                <a  href="#" ><img src="linkedin.png"  alt="linkedin logo" class="linkedin" ></a>
+                <a  href="#" ><img src="youtube-play.png"   alt="youtube logo" class="youtube"></a>
+                <a  href="#" ><img src="facebook-new.png"   alt="facebook logo" class="facebook" ></a>
+                <a  href="#"><img src="instagram-new.png"   alt="instagram logo"  class="instagram"></a> 
+                <a  href="#" ><img src="twitter.png"   alt="twitter logo" class="twitter"></a>                    
+            </div>                    
+        </div>       
+    </body>
+</html>    
